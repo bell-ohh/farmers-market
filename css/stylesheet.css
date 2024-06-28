@@ -1,0 +1,267 @@
+@import url("https://fonts.googleapis.com/css2?family=Nunito+Sans:ital,opsz,wght@0,6..12,200..1000;1,6..12,200..1000&family=Ovo&display=swap");
+
+:root {
+  --black: #000000;
+  --pine: #4c7031;
+  --irons: #824737;
+  --rust: #b55232;
+  --carrot: #f49619;
+  --cream: #fff0cb;
+  --white: #ffffff;
+  --headf: "Ovo", serif;
+  --mfont: "Nunito Sans", sans-serif;
+}
+
+body {
+  font-size: 1.1rem;
+  margin: 0;
+  padding: 0;
+}
+
+h1 {
+  padding: 0;
+  margin: 0;
+  font-family: var(--headf);
+}
+
+h2 {
+  font-size: 2.5rem;
+  color: var(--rust);
+  font-family: var(--headf);
+  margin-top: 0px;
+}
+
+h3 {
+  font-family: var(--headf);
+  font-size: 2rem;
+  color: var(--black);
+  font-weight: normal;
+}
+
+ul {
+  display: flex;
+  gap: 1rem;
+  list-style: none;
+}
+
+a.navlink {
+  text-decoration: none;
+  font-weight: normal;
+  font-family: var(--mfont);
+  color: var(--pine);
+}
+
+.hero {
+  width: 100%;
+  height: 275px;
+  background-image: url(https://assets.codepen.io/t-15440/fm-corn.jpg);
+  background-size: cover;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+header {
+  background-color: var(--cream);
+  border-bottom: 6px double var(--rust);
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  font-size: 1.1rem;
+}
+
+.card-wrapper {
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr;
+  gap: 1rem;
+  padding: 1rem;
+}
+
+.card-title {
+  font-family: var(--mfont);
+  font-size: 2rem;
+}
+
+p, h3 {
+  font-family: var(--mfont);
+  display: flex;
+  justify-content: center;
+}
+
+.button {
+  background-color: var(--pine);
+  color: #ffffff;
+  font-family: var(--mfont);
+  text-decoration: none;
+  font-size: 1.2;
+  display: inline-block;
+  padding: 10px;
+  border-radius: 10px;
+}
+
+.imgb {
+  width: 100%;
+  border-radius: 1rem;
+}
+
+footer {
+  display: flex;
+  height: 175px;
+  background-color: var(--pine);
+  border-top: 6px double var(--carrot);
+  font-family: var(--mfont);
+  color: var(--white);
+  align-items: center;
+  justify-content: center;
+}
+
+.burger {
+  display: none;
+  background-color: var(--rust);
+  border: none;
+  color: var(--white);
+}
+
+
+.button:hover {
+  background-color: var(--carrot);
+  color: var(--black);
+  
+  
+}
+
+/* MQ for mobile */
+
+@media (min-width: 300px) and (max-width: 700px) {
+  .card-wrapper {
+    grid-template-columns: 1fr;
+  }
+
+  .burger {
+    display: block;
+    position: relative;
+    right: 545px;
+    top: 48px;
+  }
+
+  .nav {
+    display: none;
+    margin: 0;
+    background: var(--irons);
+    position: absolute;
+    top: 123px;
+    left: 0px;
+    width: 50%;
+    height: 100vh;
+    padding: 0px;
+    transition: all 400ms;
+  }
+
+  .navlink {
+    display: flex;
+    justify-content: center;
+  }
+
+  .navactive {
+    right: 0;
+    display: block;
+  }
+
+  a.navlink {
+    margin-top: 3rem;
+    color: var(--cream);
+  }
+}
+
+/* MQ for Tablet */
+
+@media (min-width: 700px) and (max-width: 915px) {
+  .card-wrapper {
+    grid-template-columns: 1fr 1fr 1fr;
+  }
+
+  header {
+    display: grid;
+    grid-template-rows: 1fr 1fr;
+  }
+}
+
+
+
+/**********FOR THE FORMS ********/
+
+
+
+/* FOR THE FORMS */
+
+.wrapperbl {
+  width: 500px;
+	background-color: var(--irons);
+	border-radius: 20px;
+	color: #06327D;
+  display: grid;
+  justify-content: center;
+}
+
+h5 {
+	color: var(--white);
+	font-family: "Poppins", sans-serif;
+	text-align: center;
+	font-size: 2rem;
+  font-weight: normal;
+}
+
+
+h4 {
+	color: var(--black);
+	font-family: "Poppins", sans-serif;
+	text-align: center;
+	font-size: 16px;
+  font-weight: normal;
+  
+}
+
+
+
+input[type="submit"] {
+	padding: 15px;
+	border-radius: 10px;
+	font-family: "Poppins", sans-serif;
+	background-color: var(--carrot);
+  color: var(--black);
+	border: none;
+	font-size: 1.1rem;
+	display: block;
+	cursor: pointer;
+	margin-top: 1rem;
+}
+
+.input-wrapper {
+	display: flex;
+	flex-direction: row;
+	align-content: flex-start;
+	justify-content: space-between;
+	align-items: center;
+}
+
+input[type="tel"],
+input[type="email"],
+input[type="text"] {
+	border: 1px solid var(--black);
+	width: 80%;
+}
+
+.submit-btn-wrppr {
+	width: 100%;
+	display: flex;
+	justify-content: center;
+}
+
+textarea {
+  border: 1px solid var(--vlack);
+ 
+}
+
+h6 {
+  font-weight: normal;
+}
