@@ -7,12 +7,11 @@ console.log(nav);
 function showHamburger() {
   burger.classList.toggle("fa-times");
   nav.classList.toggle("navactive");
-
+console.log("clicked");
 }
 
 
 // form submit below
-
 const form = document.getElementById("form");
 let userArray = [];
 
